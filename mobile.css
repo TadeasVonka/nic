@@ -1,0 +1,86 @@
+/* 
+    Document   : style
+    Created on : 9.1.2013, 17:23:12
+    Author     : Daniel Vích
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body {
+  background-color: #ccccff;
+}
+
+h1 {
+  border-bottom: 1px solid lightgray;
+}
+.mainBody {
+  display: block;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  display: block;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.head {
+}
+
+.nav {
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+.articleFile {
+}
+
+.sectionFile {
+}
+
+.testArticle {
+}
+
+.resultArticle {
+}
+
+.aSide {
+}
+
+.footer {
+}
+
+.sectionQuestion {
+}
+
+.question {
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #ccffff;
+}
+
+.answers {
+  padding-left: 10px;
+}
+
+.sectionSubmit {
+}
+
+.testReview {
+}
+
+.correctAnswers {
+  background-color: rgb(158, 255, 166);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.mistakes {
+  margin-top: 10px;
+  background-color: rgb(240, 105, 105);
+  padding: 5px;
+  border-radius: 5px;
+}

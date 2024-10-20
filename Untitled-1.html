@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web tester</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script src="core.js"></script>
+    <script src="sosagParse.js"></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="only screen and (max-device-width: 480px)"
+      href="mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="only screen and (min-width: 481px)"
+      href="style.css"
+      type="text/css"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=no"
+    />
+  </head>
+  <body>
+    <div class="mainBody">
+      <header class="head" id="head"></header>
+
+      <nav class="nav" id="info"></nav>
+
+      <article class="articleFile" id="load">
+        <section class="sectionFile">
+          <h1>Načtěte soubor s testem</h1>
+          <input type="file" id="files" name="files[]" />
+          <output id="list"></output>
+          <script>
+            document
+              .getElementById("files")
+              .addEventListener("change", handleFileSelect, false);
+          </script>
+        </section>
+        <section>
+          <h1>Nebo vyberte jeden z následujících testů</h1>
+          <a
+            href="#"
+            onclick="serverFileLoad('autoelektrikar_2012-2013','Autoelektrikář','Závěrečná zkouška pro obor Autoelektrikář na Střední škole a mateřské škole Na Bojišti 15, na test máte časový limit 60 minut.')"
+            >Závěrečná zkouška Autoelektrikář</a
+          ><br />
+          <a
+            href="#"
+            onclick="serverFileLoad('Automechanik_2012-2013','Automechanik','Závěrečná zkouška pro obor Automechanik na Střední škole a mateřské škole Na Bojišti 15, na test máte časový limit 60 minut.')"
+            >Závěrečná zkouška Automechanik</a
+          >
+        </section>
+      </article>
+
+      <article class="testArticle" id="testArticle"></article>
+      <article class="resultArticle" id="resultArticle"></article>
+
+      <aside class="aSide"></aside>
+
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>
